@@ -8,6 +8,7 @@ authors = ["Ville Säävuori <ville@unessa.net>"]
 python = "^3.6"
 fastapi = "^0.61.2"
 Jinja2 = "^2.11.2"
+aiofiles = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.3"
