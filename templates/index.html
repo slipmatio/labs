@@ -5,52 +5,163 @@
     <title>Slipmat Labs</title>
     <meta name="description" content="Experimental Slipmat.io projects." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@slipmatio" />
     <meta name="twitter:creator" content="@uninen" />
-    <meta name="twitter:image" content="https://labs.slipmat.io/static/slipmat-labs-v0.jpg" />
+    <meta name="twitter:image" content="/static/slipmat-labs-v0.jpg" />
 
     <meta property="og:title" content="Slipmat Labs" />
-    <meta property="og:image" content="https://labs.slipmat.io/static/slipmat-labs-v0.jpg" />
+    <meta property="og:image" content="/static/slipmat-labs-v0.jpg" />
     <meta property="og:description" content="Experimental Slipat.io projects." />
 
     <link rel="icon" href="https://slipmatmedia.b-cdn.net/img/favicons/favicon.ico" />
-    <script async defer data-domain="labs.slipmat.io" src="https://plausible.io/js/plausible.js"></script>
+    <script
+      async
+      defer
+      data-domain="labs.slipmat.io"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+
+    {% if DEBUG %}
+    <script type="module" src="http://localhost:3000/@vite/client"></script>
+    <script type="module" src="http://localhost:3000/src/main.js"></script>
+    {% endif %}
+    <link href="/static/main.ba034bbe.css" rel="stylesheet" />
   </head>
   <body class="w-full h-screen">
-    <div class="flex flex-col items-center min-h-screen py-6 text-gray-800 bg-gradient-to-b from-indigo-300 to-purple-400 sm:py-12">
-        <div class="max-w-lg px-8 py-8 bg-white rounded-sm shadow-md">
-          <h1 class="mb-6 text-2xl font-semibold text-gray-800">Slipmat Labs</h1>
-
-          <p class="mb-6 text-lg text-gray-700">Experimental projects for experimenting with new technologies and pushing the limits of Web technology.</p>
-          
-          <h2 class="mb-2 text-xl font-medium text-gray-800">API Projects</h2>
-
-          <ul class="list-disc list-inside">
-            <li><a href="https://discogs-api.labs.slipmat.io/" class="text-indigo-600 underline hover:no-underline">Discogs artist search</a> - easy to use Discogs artist search API for internal projects</li>
-            <li><a href="https://spotify-playlist-parser.labs.slipmat.io/" class="text-indigo-600 underline hover:no-underline">Spotify Playlist Parser</a> - easy to use API for parsing Spotify playlists</li>
-            <li><a href="https://tidal-playlist-parser.labs.slipmat.io/" class="text-indigo-600 underline hover:no-underline">Tidal Playlist Parser</a> - easy to use API for parsing Tidal playlists</li>
-          </ul>
-
-          <h2 class="mt-6 mb-2 text-xl font-medium text-gray-800">Tool Experiments</h2>
-
-          <ul class="list-disc list-inside">
-            <li><a href="https://scripter.labs.slipmat.io/show/demo/build/" class="text-indigo-600 underline hover:no-underline">Slipmat Show Scripter</a> - experimental tool for building radio show scripts (and tools for playing)</li>
-            <li><a href="https://eventplanner.now.sh/" class="text-indigo-600 underline hover:no-underline">Slipmat EventPlanner</a> - experimental tool for organizing events (like festivals) across multiple timezones</li>
-            <li><a href="https://kitten.slipmat.io" class="text-indigo-600 underline hover:no-underline">Kitten</a> - metadata tool for querying Web site metadata and taking automated screenshots</li>
-          </ul>
-
-          <h2 class="mt-6 mb-2 text-xl font-medium text-gray-800">Code Experiments</h2>
-
-          <ul class="list-disc list-inside">
-            <li><a href="https://developer.slipmat.io/" class="text-indigo-600 underline hover:no-underline">Slipmat Developer Docs</a> (<a href="https://gitlab.com/slipmatio/slipmat3-devdocs/" class="text-indigo-600 underline hover:no-underline">code</a>) - public documentation for the work ttowards Next Generation Slipmat</li>
-            <li><a href="https://datatable-experiment.vercel.app/" class="text-indigo-600 underline hover:no-underline">Datatable experiment</a> (<a href="https://github.com/Uninen/datatable-experiment" class="text-indigo-600 underline hover:no-underline">code</a>)</li>
-          </ul>
-
-          <div class="mt-10 text-center text-gray-500"><p class="text-lg"><a class="underline" href="https://slipmat.io">Slipmat.io</a> Labs</p> <p>Made for the DJ community with <span class="text-red-500">❤️</span> by <a class="font-semibold text-blue-500 hover:underline" href="https://twitter.com/uninen">@Uninen</a></p></div>
+    <div
+      class="flex flex-col items-center min-h-screen py-6 text-gray-900  bg-gradient-to-b from-indigo-300 to-purple-400 sm:py-12"
+    >
+      <div class="max-w-lg px-8 py-8 bg-white rounded-sm shadow-md">
+        <div class="flex flex-row items-center mb-6">
+          <img src="/static/slipmat_logo_v3.png" class="w-10 h-10" alt="" />
+          <h1 class="flex ml-2 text-3xl font-semibold text-gray-800">Slipmat Labs</h1>
         </div>
-      </div>      
+
+        <p class="mb-6 text-lg text-gray-700">
+          Experimenting and pushing the limits of Web technologies and DJ tools.
+        </p>
+
+        <h2 class="mt-6 mb-2 text-lg font-semibold text-gray-800">
+          Tool Experiments (For DJs and Artists)
+        </h2>
+
+        <ul class="list-disc list-inside">
+          <li>
+            <a
+              href="https://scripter.labs.slipmat.io/show/demo/build/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Slipmat Show Scripter</a
+            >
+            - experimental tool for building radio show scripts (and tools for playing)
+          </li>
+          <li>
+            <a
+              href="https://eventplanner.now.sh/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Slipmat EventPlanner</a
+            >
+            - experimental tool for organizing events (like festivals) across multiple timezones
+          </li>
+          <li>
+            <a href="https://kitten.slipmat.io" class="text-indigo-600 underline hover:no-underline"
+              >Kitten</a
+            >
+            - metadata tool for querying Web site metadata and taking automated screenshots
+          </li>
+        </ul>
+
+        <h2 class="mt-6 mb-2 text-lg font-semibold text-gray-800">API Tools (For Developers)</h2>
+
+        <p>
+          These APIs are open and free to use for all active Slipmat supporters. They are meant for
+          Slipmat-related projects only. We reserve the right to limit eccessive usage.
+        </p>
+
+        <ul class="mt-4 list-disc list-inside">
+          <li>
+            <a
+              href="https://discogs-api.labs.slipmat.io/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Discogs artist search</a
+            >
+            - easy to use Discogs artist search API.
+          </li>
+          <li>
+            <a
+              href="https://spotify-playlist-parser.labs.slipmat.io/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Spotify Playlist Parser</a
+            >
+            - easy to use API for parsing Spotify playlists.
+          </li>
+          <li>
+            <a
+              href="https://tidal-playlist-parser.labs.slipmat.io/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Tidal Playlist Parser</a
+            >
+            - easy to use API for parsing Tidal playlists. (Note: this may not be working if Slipmat
+            Tidal subscription is not active.)
+          </li>
+        </ul>
+
+        <h2 class="mt-6 mb-2 text-lg font-semibold text-gray-800">
+          Code Experiments (For Developers)
+        </h2>
+
+        <ul class="list-disc list-inside">
+          <li>
+            <a
+              href="https://developer.slipmat.io/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Slipmat Developer Docs</a
+            >
+            (<a
+              href="https://gitlab.com/slipmatio/slipmat3-devdocs/"
+              class="text-indigo-600 underline hover:no-underline"
+              >code</a
+            >) - public documentation for the work ttowards Next Generation Slipmat
+          </li>
+          <li>
+            <a
+              href="https://datatable-experiment.vercel.app/"
+              class="text-indigo-600 underline hover:no-underline"
+              >Datatable experiment</a
+            >
+            (<a
+              href="https://github.com/Uninen/datatable-experiment"
+              class="text-indigo-600 underline hover:no-underline"
+              >code</a
+            >)
+          </li>
+          <li>
+            <a
+              href="https://www.npmjs.com/package/@slipmatio/ui"
+              class="text-indigo-600 underline hover:no-underline"
+              >@slipmatio/ui</a
+            >
+            (<a
+              href="https://gitlab.com/slipmatio/ui"
+              class="text-indigo-600 underline hover:no-underline"
+              >code</a
+            >) - Slipmat v3 UI library (Vue 3 / TypeScript / Tailwind CSS)
+          </li>
+        </ul>
+
+        <div class="mt-10 text-center text-gray-600">
+          <p class="text-lg">
+            <a class="underline" href="https://slipmat.io">Slipmat.io</a> Labs v{{ version }}
+          </p>
+          <p>
+            Made for the DJ community with <span class="text-red-500">❤️</span> by
+            <a class="font-semibold text-blue-500 hover:underline" href="https://twitter.com/uninen"
+              >@Uninen</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
