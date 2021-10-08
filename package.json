@@ -1,0 +1,22 @@
+{
+  "name": "labs",
+  "version": "1.1.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:slipmatio/slipmat-labs.git",
+  "author": "Ville Säävuori <ville@unessa.net>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "frontend": "vite --host 0.0.0.0",
+    "backend": "uvicorn api.index:app --reload --reload-include *.html",
+    "build": "vite build && node postbuild.js"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^2",
+    "vite": "^2.6.4"
+  }
+}

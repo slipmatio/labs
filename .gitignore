@@ -32,7 +32,5 @@ LOCAL_NOTES.md
 .pytest_cache
 .venv
 *.pyc
-
-package.json
-yarn.lock
-tailwind.config.js
+/index.html
+.vercel
