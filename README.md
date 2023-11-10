@@ -4,7 +4,7 @@ Experimental projects homepage.
 
 ## Production
 
-The project is deployed with Vercel to https://labs.slipmat.io
+The project is deployed with Netlify to https://labs.slipmat.io
 
 ## Development
 
