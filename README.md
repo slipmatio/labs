@@ -10,8 +10,12 @@ The project is deployed with Vercel to https://labs.slipmat.io
 
 Run dev server:
 
-`uvicorn index:app --reload `
+`pnpm dev`
 
-Export requirements:
+Build:
 
-`poetry export -o requirements.txt`
+`pnpm build`
+
+Preview:
+
+`pnpm preview`
