@@ -3,6 +3,7 @@
 ## 0.3.0 - 2021-11-10
 
 - Converted to static HTML.
+- Added Renovate.
 
 ## 0.2.0 - 2021-10-08
 
