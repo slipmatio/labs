@@ -10,13 +10,13 @@ importers:
     devDependencies:
       '@tailwindcss/vite':
         specifier: ^4.0.12
-        version: 4.1.2(vite@6.2.5(jiti@2.4.2)(lightningcss@1.29.2))
+        version: 4.1.2(vite@6.2.6(jiti@2.4.2)(lightningcss@1.29.2))
       tailwindcss:
         specifier: ^4.0.12
         version: 4.1.2
       vite:
         specifier: ^6.2.1
-        version: 6.2.5(jiti@2.4.2)(lightningcss@1.29.2)
+        version: 6.2.6(jiti@2.4.2)(lightningcss@1.29.2)
 
 packages:
 
@@ -468,8 +468,8 @@ packages:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
 
-  vite@6.2.5:
-    resolution: {integrity: sha512-j023J/hCAa4pRIUH6J9HemwYfjB5llR2Ps0CWeikOtdR8+pAURAk0DoJC5/mm9kd+UgdnIy7d6HE4EAvlYhPhA==}
+  vite@6.2.6:
+    resolution: {integrity: sha512-9xpjNl3kR4rVDZgPNdTL0/c6ao4km69a/2ihNQbcANz8RuCOK3hQBmLSJf3bRKVQjVMda+YvizNE8AwvogcPbw==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -699,12 +699,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.2
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.2
 
-  '@tailwindcss/vite@4.1.2(vite@6.2.5(jiti@2.4.2)(lightningcss@1.29.2))':
+  '@tailwindcss/vite@4.1.2(vite@6.2.6(jiti@2.4.2)(lightningcss@1.29.2))':
     dependencies:
       '@tailwindcss/node': 4.1.2
       '@tailwindcss/oxide': 4.1.2
       tailwindcss: 4.1.2
-      vite: 6.2.5(jiti@2.4.2)(lightningcss@1.29.2)
+      vite: 6.2.6(jiti@2.4.2)(lightningcss@1.29.2)
 
   '@types/estree@1.0.7': {}
 
@@ -837,7 +837,7 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  vite@6.2.5(jiti@2.4.2)(lightningcss@1.29.2):
+  vite@6.2.6(jiti@2.4.2)(lightningcss@1.29.2):
     dependencies:
       esbuild: 0.25.2
       postcss: 8.5.3
